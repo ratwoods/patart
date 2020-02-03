@@ -17,6 +17,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
+gem 'bootstrap-sass-extras', '~> 0.0.7'
+gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'simple_form', '~> 5.0', '>= 5.0.1'
 
 group :development, :test do
 
