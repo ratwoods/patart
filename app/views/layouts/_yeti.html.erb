@@ -6,12 +6,11 @@
 
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <li><%= link_to "Home", root_path, class: 'navbar-brand' %></li>
-      </li>
       <li class="nav-item">
+        <li><%= link_to "Home", root_path, class: 'navbar-brand' %></li>
         <li><%= link_to "Contact Us", pages_contact_path, class: 'navbar-brand' %></li>
         <li><%= link_to "About Us", pages_about_path, class: 'navbar-brand' %></li>
+        <li><%= link_to "create article", new_article_path, class: 'navbar-brand' %></li>
       </li>
       <% if !current_user %>
       <li class="nav-item">
@@ -22,11 +21,12 @@
       <% end %>
     </ul>
   </div>
+  <% if current_user %>
   <div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <% if current_user %>
+      
        <%= current_user.username %>
-      <% end %>
+      
   </button>
      <div class="dropdown-menu dropdown-menu-right">
        <button class="dropdown-item" type="button">Action</button>
@@ -37,4 +37,5 @@
        </div>
      </div>
   </div>
+  <% end %>
 </nav>
