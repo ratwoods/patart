@@ -1,5 +1,5 @@
 
  git add -A
- git commit -m "added comments model"
+ git commit -m "added controller for comments"
  git push origin comments
 
