@@ -1,5 +1,5 @@
 
  git add -A
- git commit -m "set up footer at bottom"
- git push origin master
- git push heroku master
+ git commit -m "added comments model"
+ git push origin comments
+
