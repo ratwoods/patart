@@ -1,36 +1,27 @@
-<footer class="footer-distributed navbar fixed-bottom" >
+<footer class="footer-distributed navbar fixed-bottom">
 
+    <div class="footer-right">
 
-	        <div class="footer-right">
+	<a href="#"><i class="fa fa-facebook"></i></a>
+	<a href="#"><i class="fa fa-twitter"></i></a>
+	<a href="#"><i class="fa fa-linkedin"></i></a>
+	<a href="#"><i class="fa fa-github"></i></a>
 
-			<div class="footer-icons">
+    </div>
 
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
+    <div class="footer-left">
 
-			</div>
+	<p class="footer-links">
+	·
+	<%= link_to "Contact Us", pages_contact_path, class: "page-scroll" %>
+	·
+	<%= link_to "About Us", pages_about_path, class: "page-scroll" %>
+	·
+	</p>
 
-		</div>
- 		<div id="footer">
-		        	<h3>Rat<span>Woods</span></h3>
-		</div>
+    <p> </p>
 
+    </div>
 
-
-		<divclass="footer-left">
-
-			<p class="footer-links">
-				<%= link_to "Home", root_path, class: "page-scroll" %>
-				·
-				<%= link_to "About Us", pages_about_path, class: "page-scroll" %>
-				·
-				<%= link_to "Contact Us", pages_contact_path, class: "page-scroll" %>
-				. <a class="footer-company-name">RatWoods &copy; 2020</a>
-			</p>
-		</div>
-
-	
 </footer>
 

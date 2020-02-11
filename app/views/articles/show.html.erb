@@ -1,23 +1,3 @@
-<p id="notice"><%= notice %></p>
-  <%= render 'comments/form' %>
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-<p>
-  <strong>Created by:</strong>
-  <%= @article.user.username %>
-</p>
-<p>
-  <strong>Body:</strong>
-  <%= @article.body %>
-</p>
-
-
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
-
 <div class="row">
 
    <!-- Blog Post Content Column -->
@@ -47,19 +27,26 @@
     <hr>
 
     <!-- Post Content -->
-
+    <%= @article.body %>
     <hr>
 
     <!-- Blog Comments -->
-  <%= @article.body %>
+
+    <%= render @article.comments %>
+
     <!-- Comments Form -->
-
     <%= render 'comments/form' %>
-    <div class="well">
+    <div class="card my-4">
+          <h5 class="card-header">posted comments:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                blablabla
+              </div>
 
-<h4>blah blah</h4>
-
-    </div>
+            </form>
+          </div>
+        </div>
 
     <hr>
 
@@ -78,14 +65,13 @@
 
     <!-- Side Widget Well -->
     <div class="well">
-     <h4>Recent Posts</h4>
+     <h4></h4>
 
     </div>
 
   </div>
 
 </div>
-
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
 
